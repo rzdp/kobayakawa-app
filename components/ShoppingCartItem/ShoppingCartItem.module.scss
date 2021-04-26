@@ -1,0 +1,46 @@
+@import "../../styles/abstracts/variables";
+
+.ShoppingCartItem {
+  width: 100%;
+  background-color: $white-color-light;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 15% minmax(15%, 1fr) 30% 15%;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    max-height: 5rem;
+  }
+
+  .price {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 72rem) {
+  .ShoppingCartItem {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 7.5rem);
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    .title {
+      justify-self: center;
+    }
+
+    .image {
+      max-height: 7rem;
+      justify-self: center;
+    }
+
+    .price {
+      justify-self: center;
+    }
+  }
+}

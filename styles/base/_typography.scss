@@ -1,0 +1,65 @@
+@import '../abstracts/variables';
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $black-color-dark;
+}
+
+.heading-primary {
+}
+
+.heading-secondary {
+}
+
+.heading-tertiary {
+}
+
+.text-white {
+  color: $white-color-light;
+}
+
+.text-light {
+  color: $white-color;
+}
+
+.text-grey {
+  color: $black-color-light;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-danger {
+  color: $danger-color;
+}
+
+.text-warning {
+  color: $warning-color;
+}
+
+.text-highlight {
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 800;
+}

@@ -1,0 +1,43 @@
+@import "../../../styles/abstracts/variables";
+
+.Product {
+  box-shadow: 0 1px 3px rgba($black-color, 0.15);
+  background-color: $white-color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+
+  .imageWrapper {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  .details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .title {
+      margin-bottom: 2rem;
+    }
+    .subtitle {
+      color: $black-color-light;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: $black-color-light;
+    }
+  }
+
+}

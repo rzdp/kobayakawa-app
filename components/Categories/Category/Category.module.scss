@@ -1,0 +1,30 @@
+@import "../../../styles/abstracts/variables";
+
+.Category {
+  padding: 2.5rem;
+  width: 35rem;
+  display: block;
+  color: $black-color-light;
+  background-color: $white-color-light;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+  caret-color: transparent;
+  text-decoration: none;
+
+  &:not(.Active):hover {
+    cursor: pointer;
+    color: $white-color-light;
+    background-color: $black-color-light;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.Active {
+  cursor: pointer;
+  color: $white-color-light;
+  background-color: $primary-color;
+}

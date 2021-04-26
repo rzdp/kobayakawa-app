@@ -1,0 +1,86 @@
+@import "../../styles/abstracts/variables";
+
+.NavigationBar {
+  height: 7.5rem;
+  padding: 1rem 3rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white-color-light;
+  box-shadow: 0 1px 3px rgba($black-color, 0.15);
+  z-index: 2;
+  .list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    .listItem {
+      display: flex;
+      .logo {
+        margin-right: 1rem;
+        width: 5rem;
+        transform: scaleX(-1);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: $black-color;
+
+        &:hover {
+          cursor: pointer;
+          fill: $primary-color;
+        }
+      }
+
+      .listLink {
+        cursor: pointer;
+
+        .accountText {
+          color: $black-color;
+          margin-right: 1rem;
+          caret-color: transparent;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .accountCaret {
+          width: 1.25rem;
+          height: 1.25rem;
+          fill: $black-color;
+          transform: rotate(90deg);
+        }
+      }
+
+      .cartItem {
+        margin-left: 1rem;
+        background-color: $primary-color;
+        color: $white-color-light;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 1rem;
+        height: 1rem;
+        width: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

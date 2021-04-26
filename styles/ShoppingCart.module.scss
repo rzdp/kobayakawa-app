@@ -1,0 +1,50 @@
+@import "../styles/abstracts/variables";
+
+.ShoppingCart {
+  padding: 4rem 2rem;
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .head {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+
+    .menu {
+      display: grid;
+      background-color: $white-color-light;
+      border-radius: 1rem;
+      padding: 2rem;
+      grid-template-columns: 15% minmax(15%, 1fr) 30% 15%;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+@media only screen and (max-width: 72rem) {
+  .ShoppingCart {
+    .body {
+      .menu {
+        display: none;
+      }
+    }
+  }
+}

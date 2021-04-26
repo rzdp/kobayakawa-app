@@ -1,0 +1,27 @@
+$primary-color: #b00900;
+$primary-color-dark: darken($primary-color, 5%);
+$primary-color-light: lighten($primary-color, 5%);
+
+$black-color: #212121;
+$black-color-dark: darken($black-color, 5%);
+$black-color-light: lighten($black-color, 50%);
+
+$white-color: #f9f9f9;
+$white-color-dark: darken($white-color, 5%);
+$white-color-light: #fff;
+
+$success-color: #5ac69f;
+$success-color-dark: darken($success-color, 5%);
+$success-color-light: lighten($success-color, 5%);
+
+$warning-color: #f8cf50;
+$warning-color-dark: darken($warning-color, 5%);
+$warning-color-light: lighten($warning-color, 5%);
+
+$danger-color: #e32227;
+$danger-color-dark: darken($danger-color, 5%);
+$danger-color-light: lighten($danger-color, 5%);
+
+$info-color: #328ae3;
+$info-color-dark: darken($info-color, 5%);
+$info-color-light: lighten($info-color, 5%);
